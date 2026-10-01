@@ -1,13 +1,11 @@
-from rich import print, inspect
-
 class Pessoa:
     def __init__(self, nome = "", idade = 0):
         self.nome = nome
         self.idade = idade
 
-    def fazer_aniversário(self):
+    def fazer_aniversario(self):
         self.idade += 1
-
+        print(f"{self.nome} fez aniversário e agora está com {self.idade} anos de idade")
 
 class Aluno(Pessoa):
     def __init__(self, nome, idade, curso, turma):
@@ -16,7 +14,7 @@ class Aluno(Pessoa):
         self.turma = turma
 
     def fazer_matricula(self):
-        pass
+        print(f"O aluno {self.nome} acabou de fazer a matrícula")
 
 class Professor(Pessoa):
     def __init__(self, nome, idade, especialidade, nivel):
@@ -25,7 +23,7 @@ class Professor(Pessoa):
         self.nivel = nivel
 
     def dar_aula(self):
-        pass
+        print(f"O professor {self.nome} começou a dar aula")
 
 class Funcionario(Pessoa):
     def __init__(self, nome, idade, cargo, setor):
@@ -34,9 +32,4 @@ class Funcionario(Pessoa):
         self.setor = setor
 
     def bater_ponto(self):
-        pass
-
-
-a1 = Aluno("José", 17, "Informática", "T01")
-print(a1.__dict__)
-inspect(a1, methods=True)
+        print(f"{self.nome} registrou o ponto")
