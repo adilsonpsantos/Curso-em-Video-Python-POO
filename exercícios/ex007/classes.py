@@ -9,7 +9,7 @@ class Pessoa(ABC): # definição da classe Pessoa como abstrata
         self.idade += 1
         print(f"{self.nome} fez aniversário e agora está com {self.idade} anos de idade")
 
-    @abstractmethod  # decorator necesessário para definir o método abstrado
+    @abstractmethod  # decorator necesessário para definir o mét. abstrado
     def estudar(self):
         pass
 

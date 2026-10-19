@@ -11,7 +11,7 @@ class Produto():
         self.desconto = desconto
 
     def __str__(self):
-        # sobreescrita do método str da classe
+        # sobreescrita do mét. str da classe
         return f"{self.nome} custa {self.valor}"
 
     def etiqueta(self):
