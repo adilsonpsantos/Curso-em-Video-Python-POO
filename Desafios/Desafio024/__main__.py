@@ -1,3 +1,5 @@
+import bebidaquente
+
 def main():
     pass
 
