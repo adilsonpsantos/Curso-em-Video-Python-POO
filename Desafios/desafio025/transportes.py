@@ -49,3 +49,5 @@ class Drone(Transporte):
             return f"{valor:.2f}"
         else:
             return "Frete não disponível. Distância máxima de 10km"
+
+#print(__name__)

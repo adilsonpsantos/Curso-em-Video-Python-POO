@@ -5,7 +5,7 @@ from rich.table import Table
 def main():
     dist = 50
     frete = 12
-
+    """
     entrega = Moto(dist, frete)
     print(f"Frete de {dist}km com {type(entrega).__name__} = {entrega.calcular_frete()}")
 
@@ -16,7 +16,7 @@ def main():
     print(f"Frete de {dist}km com {type(entrega).__name__} = {entrega.calcular_frete()}")
 
     entrega = [Moto(dist, frete), Caminhao(dist, frete), Drone(dist, frete)]
-
+    """
     #   uma forma mais bonita
 
     entrega = [Moto(dist, frete), Caminhao(dist, frete), Drone(dist, frete)]
